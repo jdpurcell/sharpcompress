@@ -3,8 +3,10 @@ on:
   push:
     branches:
       - 'master'
+      - 'custom'
   pull_request:
     types: [ opened, synchronize, reopened, ready_for_review ]
+  workflow_dispatch:
 
 jobs:
   build:
